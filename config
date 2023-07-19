@@ -1,0 +1,44 @@
+#Basic Info about the character.  Who are they, and what pronoun should we use?
+#The pronoun, to be grammatically correct, should be "His/Her/Its/Their" or other such things
+#As it will be used for sentences like "Marcus is using his telekinesis" or such.
+
+name="Marcus"
+pronoun="his"
+
+#Log file; where to place the log.  Note that this will be also be used as the location for the feedback pane.
+
+log=marcuslog
+
+#Picture for the splash screen!  Place a bit of art of your character.
+#You may also credit the artist if you want.
+
+picture=/home/trekkie1701c/Pictures/Kaerwyn/Marcus.jpg
+artist="John Fell"
+
+max=4800 #Default maximum power
+crippled=0 #0 crippled limbs for default
+cripfac=1 #Percentage of limbs which work, as a decimal.  Default is 1.
+high=3600 #75% of Marcus' power at default
+mid=2400 #50% at default
+low=1200 #25% at default
+
+
+# Colors
+txt_red="\033[31m"    # Red
+txt_green="\033[32m"  # Green
+txt_yellow="\033[33m" # Yellow
+txt_blue="\033[36m"   # Blue
+txt_reset="\033[0m"   # Reset the prompt back to the default color
+
+#Powers, and eddiciency:
+
+#Enter these for any text you might want to enter
+#These are case sensitive.  "Grab" and "grab" are different.
+#If you enter a non-existent value, the program will glitch and give a null power amount.  Fortuately you can use the 'reset' command to reset to the previous value and try again.
+
+grab=".7"
+glow=".8"
+shock=".005"
+heat=".10"
+sound=".40"
+

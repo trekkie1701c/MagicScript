@@ -1,6 +1,8 @@
 #!/bin/bash
 #set -o xtrace
-touch marcuslog
+source config
+touch $log
+ascii-image-converter -Cc $picture > $picture.txt
 clear
 
 if [ -z "$TMUX" ]; then
@@ -8,8 +10,8 @@ if [ -z "$TMUX" ]; then
 tmux attach -t marcus
 if [[ $? -ne 0 ]]; then
 clear
-echo "Marcus' Energy Script" | figlet -tcf lean | lolcat -a -F .1 -p 10
-file=marcus.txt
+echo "$name Energy Script" | figlet -tcf lean | lolcat -a -F .1 -p 10
+file=$picture.txt
 while read -r line;
 do
 echo -e "$line" | lolcat -a -F .1 -p 10 
@@ -19,7 +21,7 @@ done<$file
 frames="/ | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ - / | \\ -"
 for frame in $frames;
 do
-printf "\r$frame Art By John Fell..."
+printf "\r$frame Art By $artist..."
 sleep .1
 done
 tmux new -d -s marcus 'exec ./marcus-calc.sh $1'
