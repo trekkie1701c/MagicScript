@@ -18,6 +18,31 @@ bcmath
 tmux
 lolcat
 figlet
+ascii-image-converter
+
+## Configuring
+
+By default the script is set for my male mage Marcus.  In the config file you can edit the following:
+
+Name - The name of your character
+Pronoun - What pronoun to use.  This is not for something like "He/Him"; rather, the script will output things such as "Marcus is using his telekinesis..."; and you'd want to put whatever pronoun you feel would be correct for your character in that sentence.
+
+Log file - Where to store the log
+
+Picture - What picture to use for the splash screen
+Artist - Who drew the picture?  This will be displayed on the splash screen after the picture intro.
+
+Power levels:
+
+Max/High/Mid/Low/Crippled/Cripfac.  What the max power is and the starting powers for High/Mid/Low, as well as how crippled the character is (ie, how much power do they actually have available)
+
+Colors:
+
+These determine the color the remaining power is displayed as.
+
+Powers and efficiency:
+
+These define the powers - which you'll enter as commands at the prompt - and the efficiency rating as a decimal.
 
 ## Usage:
 
@@ -47,11 +72,11 @@ Finally, you'll be dropped to the main prompt.  All options are specified, howev
 
 Default abilities are:
 
-Glow
-Shock
-Grab
-Heat
-Noise
+glow
+shock
+grab
+heat
+noise
 
 These can be invoked with their names, followed by three numbers in the format of Duration (in minutes) Mass (in Kilograms) and Distance (in Meters).
 
