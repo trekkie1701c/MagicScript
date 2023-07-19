@@ -27,7 +27,7 @@ done
 tmux new -d -s marcus 'exec ./marcus-calc.sh $1'
 tmux rename-window 'Marcus'
 tmux select-window -t marcus:0
-tmux split-window -h 'exec /usr/bin/tail -f marcuslog'
+tmux split-window -h 'exec ./log.sh'
 tmux select-pane -t 0
 tmux -2 attach-session -t marcus
 clear
