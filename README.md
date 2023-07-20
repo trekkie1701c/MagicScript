@@ -1,5 +1,5 @@
 # Magic Script
-Tracking the energy usage of one of my characters from https://kaerwyn.com
+Tracking the energy usage of one of my characters from https://kaerwyn.com, as well as one from https://tawaa-rp.net
 
 This is a bash script I wrote to help me with bookkeeping of one of my characters over on a Creative Writing Group site I'm a member of.
 The basics are that this character has a 'magic' system that utilizes regular old electricity to function.  I made this because I hadn't really seen any mana trackers out there and I wanted to have my own to kind of keep tabs on this character and explore their abilities quickly.  I'm putting this out in public both as a bit of transparency - if I'm utilizing this character in a story/campaign it's fairly simple to check my numbers - and also because, again, I wasn't able to find anything like this.  Hopefully with some modification it can fit someone else's needs.
